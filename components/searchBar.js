@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { searchBar } from "./sharedStyles";
+import { searchBar, searchBarContainer } from "./sharedStyles";
 
 class SearchBar extends Component {
   state = {
@@ -22,12 +22,13 @@ class SearchBar extends Component {
   render() {
     const { name } = this.state;
     return (
-      <div style={searchBar}>
+      <div style={searchBarContainer}>
         <input
           value={name}
           onChange={this.handleChange}
           name="name"
           onKeyUp={this.handleSubmit}
+          style={searchBar}
         />
       </div>
     );

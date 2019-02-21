@@ -1,7 +1,7 @@
 const mainContainer = {
   display: "flex",
   flexDirection: "column",
-  // justifyContent: "center",
+  justifyContent: "center",
   alignItems: "center"
 };
 
@@ -18,8 +18,16 @@ const logo = {
   marginLeft: 15
 };
 
+const searchBarContainer = {
+  marginTop: 20,
+  marginBottom: 20,
+  width: "100%",
+  marginLeft: "50%"
+};
+
 const searchBar = {
-  marginTop: 20
+  width: "50%",
+  fontSize: 18
 };
 
 const repoList = {
@@ -30,11 +38,24 @@ const repoList = {
 };
 
 const repoItem = {
+  cursor: "pointer",
   outline: "1px solid #000",
   flexGrow: 1,
   width: 300,
   height: 300,
   margin: 10
+};
+
+const h1 = {
+  fontWeight: "bold",
+  textAlign: "center"
+};
+
+const button = {
+  border: "1px solid #FFF",
+  color: "#FFF",
+  backgroundColor: "rgba(35, 114, 209, 1.0)",
+  textAlign: "center"
 };
 
 const center = {
@@ -45,7 +66,10 @@ module.exports = {
   mainContainer,
   header,
   logo,
+  h1,
+  button,
   searchBar,
+  searchBarContainer,
   repoList,
   repoItem,
   center
