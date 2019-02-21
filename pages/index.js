@@ -11,7 +11,7 @@ class App extends Component {
   grabUserRepos = name => {
     console.log(name);
 
-    // Be sure to validate for black characters
+    // Be sure to validate for blank characters
     if (name) {
       fetch(`https://api.github.com/users/${name}/repos`)
         .then(response => response.json())
