@@ -40,6 +40,7 @@ const repoList = {
 const repoItem = {
   cursor: "pointer",
   outline: "1px solid #000",
+  backgroundColor: "#FFF",
   flexGrow: 1,
   width: 300,
   height: 300,
