@@ -28,7 +28,7 @@ const UserPage = ({
 UserPage.getInitialProps = async ({ query }) => {
   const user = await fetch(`https://api.github.com/repos/${query.user}`);
   const userData = await user.json();
-  console.log(userData);
+
   return {
     hasDownloads: userData.has_downloads,
     hasIssues: userData.has_issues,

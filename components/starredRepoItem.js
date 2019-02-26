@@ -1,5 +1,4 @@
 import React from "react";
-// import Link from "next/link";
 
 import { repoItem, h1, center, button } from "./sharedStyles";
 

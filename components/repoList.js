@@ -4,7 +4,6 @@ import { repoList } from "./sharedStyles";
 import Router from "next/router";
 
 const persistUser = user => {
-  console.log(user.full_name);
   Router.push({
     pathname: "/gitUser",
     query: { user: user.full_name }
