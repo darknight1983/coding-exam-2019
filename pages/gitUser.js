@@ -17,9 +17,9 @@ const UserPage = ({
         <h1>{owner}</h1>
         <h3>{id}</h3>
         <p>{homepage}</p>
-        <p>Downloads: {hasDownloads}</p>
-        <p>Has Issues: {hasIssues}</p>
-        <p>Open Issues: {openIssues}</p>
+        <p>Downloads: {hasDownloads ? hasDownloads : 0}</p>
+        <p>Has Issues: {hasIssues ? hasIssues : 0}</p>
+        <p>Open Issues: {openIssues ? openIssues : 0}</p>
       </div>
     </div>
   );
