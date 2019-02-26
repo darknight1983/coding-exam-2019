@@ -63,6 +63,7 @@ const center = {
   textAlign: "center"
 };
 
+const userDetail = {};
 module.exports = {
   mainContainer,
   header,
@@ -73,5 +74,6 @@ module.exports = {
   searchBarContainer,
   repoList,
   repoItem,
-  center
+  center,
+  userDetail
 };

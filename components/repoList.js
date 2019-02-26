@@ -1,6 +1,15 @@
 import React from "react";
 import StarredRepo from "./starredRepoItem";
 import { repoList } from "./sharedStyles";
+import Router from "next/router";
+
+const persistUser = user => {
+  console.log(user.full_name);
+  Router.push({
+    pathname: "/gitUser",
+    query: { user: user.full_name }
+  });
+};
 
 const RepoList = props => {
   const { repos } = props;
@@ -13,6 +22,8 @@ const RepoList = props => {
             name={repo.name}
             language={repo.language}
             description={repo.description}
+            user={repo}
+            userInfo={persistUser}
           />
         ))}
       </div>
